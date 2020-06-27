@@ -1,0 +1,40 @@
+{
+    "identifier": "wylan.RailsMigrations",
+    "name": "Rails Migrations",
+    "vendor": "Wylan",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": [],
+
+    "main": "main.js",
+
+    "activationEvents": [
+        "onLanguage:html"
+    ],
+
+    "entitlements": {
+        "filesystem": "readwrite"
+    },
+
+    "commands": {
+        "command-palette": [
+		    {
+		    	"title": "Open Latest Migration",
+		    	"command": "rails-migrations.openLatestMigration"
+		    },
+		    {
+		    	"title": "List Migrations",
+		    	"command": "rails-migrations.listMigrations"
+		    }
+	    ]
+    },
+
+    "config": [
+        {
+            "key": "rails-migrations.foobar",
+            "title": "Foo the bar",
+            "type": "boolean",
+            "default": false
+        }
+    ]
+}
