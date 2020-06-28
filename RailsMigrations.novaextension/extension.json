@@ -2,15 +2,13 @@
     "identifier": "wylan.RailsMigrations",
     "name": "Rails Migrations",
     "vendor": "Wylan",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Provides commands to easily access migrations in your Rails projects.",
     "version": "1.0",
+    "repository": "https://github.com/Wylan/nova-rails-migrations",
+    "bugs": "https://github.com/Wylan/nova-rails-migrations/issues",
     "categories": [],
 
     "main": "main.js",
-
-    "activationEvents": [
-        "onLanguage:html"
-    ],
 
     "entitlements": {
         "filesystem": "readwrite"
@@ -23,18 +21,9 @@
 		    	"command": "rails-migrations.openLatestMigration"
 		    },
 		    {
-		    	"title": "List Migrations",
+		    	"title": "Choose Migration",
 		    	"command": "rails-migrations.listMigrations"
 		    }
 	    ]
-    },
-
-    "config": [
-        {
-            "key": "rails-migrations.foobar",
-            "title": "Foo the bar",
-            "type": "boolean",
-            "default": false
-        }
-    ]
+    }
 }
