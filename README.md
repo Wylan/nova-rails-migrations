@@ -8,7 +8,7 @@ Provides commands to easily access migrations in your Rails projects.
 * Choose a specific migration from your migrations list
 
 ## Installation
-* Download the latest (release)[https://github.com/Wylan/nova-rails-migrations/releases].
+* Download the latest [release](https://github.com/Wylan/nova-rails-migrations/releases).
 * Decompress the archive.
 * Double click `RailsMigrations.novaextension` to install the extension in Nova.
 
