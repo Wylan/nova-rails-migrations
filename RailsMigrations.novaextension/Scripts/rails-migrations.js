@@ -1,17 +1,27 @@
 class RailsMigrations {
     openLatestMigration() {
-        if (this.migrationsFolderExists) {
-            this.openMigration(this.migrationsList[0]);
-        } else {
-            this.showError("Couldn't find the migrations folder. Are you sure the workspace contains a Rails project?");
-        }
+        this.maybeShowMigrations((migrations) => {
+            const migration = migrations[0]
+            this.openMigration(migration);
+        })
     }
 
     listMigrations() {
+        this.maybeShowMigrations((migrations) => {
+            nova.workspace.showChoicePalette(migrations, {placeholder: "Choose Migration"}, this.openMigration.bind(this))
+        })
+    }
+    
+    maybeShowMigrations(callbackAction) {
         if (this.migrationsFolderExists) {
-            nova.workspace.showChoicePalette(this.migrationsList, {placeholder: "Choose Migration"}, this.openMigration.bind(this))
+            const migrations = this.migrationsList
+            if (migrations?.length > 0) {
+                callbackAction(migrations)
+            } else {
+                this.showError("No files found in the migrations folder.");
+            }
         } else {
-            this.showError("Couldn't find the migrations folder. Are you sure the workspace contains a Rails project?");
+            this.showError("Couldn't find the migrations folder. Does the workspace contain a Rails project?");
         }
     }
 
