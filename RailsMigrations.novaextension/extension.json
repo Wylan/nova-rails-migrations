@@ -1,7 +1,7 @@
 {
     "identifier": "wylan.RailsMigrations",
     "name": "Rails Migrations",
-    "vendor": "Wylan",
+    "organization": "Wylan",
     "description": "Provides commands to easily access migrations in your Rails projects.",
     "version": "1.0.1",
     "repository": "https://github.com/Wylan/nova-rails-migrations",
