@@ -3,12 +3,11 @@
     "name": "Rails Migrations",
     "vendor": "Wylan",
     "description": "Provides commands to easily access migrations in your Rails projects.",
-    "version": "1.0",
+    "version": "1.0.1",
     "repository": "https://github.com/Wylan/nova-rails-migrations",
     "bugs": "https://github.com/Wylan/nova-rails-migrations/issues",
     "categories": [
-        "key-bindings",
-        "languages"
+        "commands"
     ],
     "main": "main.js",
     "entitlements": {
