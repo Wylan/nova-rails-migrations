@@ -15,14 +15,14 @@
     },
     "commands": {
         "command-palette": [
-		    {
-		    	"title": "Open Latest Migration",
-		    	"command": "rails-migrations.openLatestMigration"
-		    },
-		    {
-		    	"title": "Choose Migration",
-		    	"command": "rails-migrations.listMigrations"
-		    }
-	    ]
+            {
+                "title": "Open Latest Migration",
+                "command": "rails-migrations.openLatestMigration"
+            },
+            {
+                "title": "Choose Migration",
+                "command": "rails-migrations.listMigrations"
+            }
+        ]
     }
 }
