@@ -26,7 +26,7 @@ class RailsMigrations {
     }
 
     openMigration(name) {
-        nova.workspace.openFile(nova.path.join(this.migrationsPath, name));
+        nova.workspace.openFile(nova.path.join(this.migrationsPath, name), null);
     }
 
     showError(msg) {

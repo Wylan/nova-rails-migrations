@@ -1,3 +1,7 @@
+## Version 1.0.3
+
+Fixed crash when running in Nova V4.
+
 ## Version 1.0.2
 
 Fixed crash when running on macOS Mojave.

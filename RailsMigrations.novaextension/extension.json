@@ -3,7 +3,7 @@
     "name": "Rails Migrations",
     "organization": "Wylan",
     "description": "Provides commands to easily access migrations in your Rails projects.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "repository": "https://github.com/Wylan/nova-rails-migrations",
     "bugs": "https://github.com/Wylan/nova-rails-migrations/issues",
     "categories": [
